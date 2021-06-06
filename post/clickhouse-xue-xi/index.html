@@ -1,22 +1,99 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://sillykay-github-io.pages.dev/</id>
-    <title>Gridea</title>
-    <updated>2021-06-06T07:08:33.721Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://sillykay-github-io.pages.dev/"/>
-    <link rel="self" href="https://sillykay-github-io.pages.dev/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
-    <logo>https://sillykay-github-io.pages.dev/images/avatar.png</logo>
-    <icon>https://sillykay-github-io.pages.dev/favicon.ico</icon>
-    <rights>All rights reserved 2021, Gridea</rights>
-    <entry>
-        <title type="html"><![CDATA[ClickHouse学习]]></title>
-        <id>https://sillykay-github-io.pages.dev/post/clickhouse-xue-xi/</id>
-        <link href="https://sillykay-github-io.pages.dev/post/clickhouse-xue-xi/">
-        </link>
-        <updated>2021-06-06T07:04:46.000Z</updated>
-        <content type="html"><![CDATA[<ol>
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ClickHouse学习 | Gridea</title>
+<link rel="shortcut icon" href="https://sillykay-github-io.pages.dev//favicon.ico?v=1622963306441">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://sillykay-github-io.pages.dev//styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="ClickHouse学习 | Gridea - Atom Feed" href="https://sillykay-github-io.pages.dev//atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="
+ClickHouse与Mysql或presto不同，是大小写敏感的。
+
+
+有些关键字是不大小写敏感的，具体关键字的情况可以通过系统表system.data_type_families 查询了解。
+name (String) — 数据类型的..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://sillykay-github-io.pages.dev/">
+  <img class="avatar" src="https://sillykay-github-io.pages.dev//images/avatar.png?v=1622963306441" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              ClickHouse学习
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-06-06
+              </span>
+              <span>
+                6 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <ol>
 <li>ClickHouse与Mysql或presto不同，是大小写敏感的。</li>
 </ol>
 <ul>
@@ -91,6 +168,94 @@ locate(haystack, needle[, start_pos])</li>
 <li>在haystack字段中寻找needle子字符串，返回位置，如果未找到子字符串，则为0(区分大小写，positionCaseInsensitive（）函数不区分大小写，使用跟position一样）。例：</li>
 <li>SELECT position('Hello, world!', '!'); 结果为13</li>
 </ul>
-]]></content>
-    </entry>
-</feed>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '2f1f6705867ff7ec2bc4',
+    clientSecret: '41198226109b6e1d5434c5bdb257fe1194bcc476',
+    repo: 'sillykay.github.io',
+    owner: 'sillykay',
+    admin: ['sillykay'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://sillykay-github-io.pages.dev//atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
