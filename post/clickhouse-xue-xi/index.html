@@ -8,8 +8,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://kayblog.github.io//favicon.ico?v=1624155517718">
-<link rel="stylesheet" href="https://kayblog.github.io//styles/main.css">
+<link rel="shortcut icon" href="https://kayblog-github-io.pages.dev//favicon.ico?v=1624970541388">
+<link rel="stylesheet" href="https://kayblog-github-io.pages.dev//styles/main.css">
 
 
   
@@ -38,8 +38,8 @@ name (String) — 数据类型的..." />
       <div class="sidebar" :class="{ 'full-height': menuVisible }">
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
-      <a class="site-title-container" href="https://kayblog.github.io/">
-        <img src="https://kayblog.github.io//images/avatar.png?v=1624155517718" class="site-logo">
+      <a class="site-title-container" href="https://kayblog-github-io.pages.dev/">
+        <img src="https://kayblog-github-io.pages.dev//images/avatar.png?v=1624970541388" class="site-logo">
         <h1 class="site-title">SillyKay</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -93,7 +93,7 @@ name (String) — 数据类型的..." />
 Steam主页：<a href="https://steamcommunity.com/profiles/76561198357297799">点此进入</a>
     </div>
     <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://kayblog.github.io//atom.xml" target="_blank">RSS</a>
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://kayblog-github-io.pages.dev//atom.xml" target="_blank">RSS</a>
     </div>
   </div>
 </div>
@@ -105,7 +105,7 @@ Steam主页：<a href="https://steamcommunity.com/profiles/76561198357297799">�
             <h2 class="post-title">ClickHouse学习</h2>
             <div class="post-date">2021-06-06</div>
             
-              <div class="feature-container" style="background-image: url('https://kayblog.github.io//post-images/clickhouse-xue-xi.png')">
+              <div class="feature-container" style="background-image: url('https://kayblog-github-io.pages.dev//post-images/clickhouse-xue-xi.png')">
               </div>
             
             <div class="post-content" v-pre>
@@ -127,7 +127,7 @@ SELECT DISTINCT a FROM t1 ORDER BY b ASC</li>
 <li>ClickHouse支持使用 DISTINCT 和 ORDER BY 在一个查询中的不同的列。</li>
 <li>DISTINCT 子句在 ORDER BY 子句前被执行。</li>
 <li>而prestosql或mysql都必须要求排序的字段必须包含在select子句中：<br>
-<img src="https://kayblog.github.io//post-images/1622963200960.png" alt="" loading="lazy"><br>
+<img src="https://kayblog-github-io.pages.dev//post-images/1622963200960.png" alt="" loading="lazy"><br>
 SELECT s, arr FROM arrays_test ARRAY JOIN arr</li>
 <li>ARRAY JOIN用于生成一个新表，该表具有包含该初始列中的每个单独数组元素的列，而其他列的值将被重复显示。<br>
 GROUP BY</li>
@@ -165,7 +165,7 @@ where &quot;date&quot;&gt;'2021-05-01'<br>
 group by x<br>
 order by num desc</li>
 <li>会根据每个x的记录数，产生根据记录数的字符带，（注：在这里因为app表中date字段跟CH中的不敏感关键字date重复，所以需要加上双引号进行处理，在prestosql中则不需要，在hive中则需要加上斜点<code>date</code>进处理）从而直观的展示数据大小，结果：<br>
-<img src="https://kayblog.github.io//post-images/1622963224137.png" alt="" loading="lazy"><br>
+<img src="https://kayblog-github-io.pages.dev//post-images/1622963224137.png" alt="" loading="lazy"><br>
 floor(a, b) round(a,b)</li>
 <li>floor函数跟round函数都是取整函数，区别是round函数会有四舍五入的效果，此外CH的取整函数支持b为负数来取整，(当floor函数的b不填或为零时，默认为不进行取整，也就是原数据输出，而round函数b省略或为零时，则是默认取到整数），例：</li>
 <li>floor(123.45, 1) = 123.4, floor(123.45, -1) = 120.</li>
@@ -190,7 +190,7 @@ locate(haystack, needle[, start_pos])</li>
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://kayblog.github.io/post/hello-gridea/">
+                <a href="https://kayblog-github-io.pages.dev/post/hello-gridea/">
                   <h3 class="post-title">
                     Hello Gridea
                   </h3>
